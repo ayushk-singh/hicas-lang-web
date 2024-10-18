@@ -1,0 +1,82 @@
+
+body {
+	margin: 0;
+	line-height: normal;
+	overflow: hidden;
+}
+
+.login-button{
+	width: 100%;
+	position: relative;
+	border-radius: 15px;
+	background-color: #024caa;
+	border: 1px solid #656363;
+	box-sizing: border-box;
+	height: 46px;
+	color: white;
+}
+
+.loginpage-child {
+	position: absolute;
+	top: 48px;
+	left: 43px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 48px;
+	background-color: #f1ecec;
+	width: 607px;
+	height: 706px;
+	display: none;
+	opacity: 0.5;
+}
+.welcome-back {
+	position: absolute;
+	top: 275px;
+	left: 92px;
+	font-weight: 600;
+	display: inline-block;
+	width: 324px;
+	height: 35px;
+}
+.span {
+	color: #da0d0d;
+}
+
+.rectangle-parent {
+	position: absolute;
+	top: 350px;
+	left: 92px;
+	width: 403px;
+	height: 270px;
+	font-size: 16px;
+}
+.image-1-icon {
+	position: absolute;
+	top: 106px;
+	left: 121px;
+	width: 345px;
+	height: 112px;
+	object-fit: cover;
+}
+.login-banner {
+	position: absolute;
+	width: 107.66%;
+	top: -63px;
+	right: -57.66%;
+	left: 50%;
+	max-width: 100%;
+	overflow: hidden;
+	height: 905px;
+	object-fit: cover;
+}
+.loginpage {
+	width: 100%;
+	position: relative;
+	background-color: #fff;
+	height: 832px;
+	overflow: hidden;
+	text-align: left;
+	font-size: 24px;
+	color: #000;
+	font-family: Poppins;
+}
+

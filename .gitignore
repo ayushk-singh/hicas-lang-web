@@ -1,0 +1,34 @@
+# Node.js dependencies
+node_modules/
+
+# Appwrite configuration (sensitive data)
+.env
+
+# Logs
+logs/
+*.log
+
+# Debug files
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build output (for frontend frameworks like React, Vite, or Webpack)
+dist/
+build/
+
+# IDE-specific files (e.g., JetBrains, Visual Studio Code)
+.idea/
+.vscode/
+
+# npm package lock file (optional, but can be useful for specific version management)
+package-lock.json
+
+# Appwrite generated files (if any)
+*.appwrite
+
+# Temporary files (e.g., text editors or system files)
+*.swp
+*.bak
