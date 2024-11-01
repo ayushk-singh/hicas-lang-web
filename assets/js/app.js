@@ -1,8 +1,8 @@
 // Initialize Appwrite Client
 const client = new Appwrite.Client();
 client
-  .setEndpoint('http://localhost:8080/v1') // Replace with your Appwrite endpoint
-  .setProject('670ff1870003895776ce'); // Replace with your Project ID
+  .setEndpoint('https://cloud.appwrite.io/v1') // Replace with your Appwrite endpoint
+  .setProject('67230211000eaa59807c'); // Replace with your Project ID
 
 const account = new Appwrite.Account(client);
 
@@ -19,7 +19,7 @@ document.getElementById('login-form')?.addEventListener('submit', function(event
     .then(function(response) {
       console.log('Login Successful:', response);
       // Redirect to the dashboard page after successful login
-      window.location.href = 'dashboard.html';
+      window.location.href = '/dashboard/dashboard.html';
     })
     .catch(function(error) {
       console.error('Login Failed:', error);
@@ -38,7 +38,7 @@ function logout(event) {
     .then(function(response) {
       console.log('Logged out successfully:', response);
       // Redirect to the login page after successful logout
-      window.location.href = 'index.html';  
+      window.location.href = '/login/index.html';  
     })
     .catch(function(error) {
       console.error('Error logging out:', error);

@@ -36,41 +36,38 @@
 	</nav>
 
 	<div class="dropdown-container">
-		<div class="dropdown">
-			<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-			  Select Subject
-			</button>
-			<ul class="dropdown-menu">
-			  <li><a class="dropdown-item" href="#">Hindi</a></li>
-			  <li><a class="dropdown-item" href="#">Malayalam</a></li>
-			  <li><a class="dropdown-item" href="#">French</a></li>
-			</ul>
-		</div>
-
-		<div class="dropdown">
-			<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-			  Select Department
-			</button>
-			<ul class="dropdown-menu">
-			  <li><a class="dropdown-item" href="#">BCA</a></li>
-			  <li><a class="dropdown-item" href="#">BBA CA</a></li>
-			  <li><a class="dropdown-item" href="#">BSc IT</a></li>
-			</ul>
-		</div>
-
-		<div class="dropdown">
-			<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-			  Select Document
-			</button>
-			<ul class="dropdown-menu">
-			  <li><a class="dropdown-item" href="#">CIA I Mark</a></li>
-			  <li><a class="dropdown-item" href="#">CIA II Mark</a></li>
-			  <li><a class="dropdown-item" href="#">Model Mark</a></li>
-			</ul>
-		</div>
+		<!-- Subject Selector -->
+		<select id="subject-dropdown" onchange="handleSelection()">
+			<option value="" disabled selected>Select Subject</option>
+			<option value="hindi">Hindi</option>
+			<option value="french">French</option>
+			<option value="science">Science</option>
+		</select>
+	
+		<!-- Department Selector -->
+		<select id="dept-dropdown" onchange="handleSelection()">
+			<option value="" disabled selected>Select Department</option>
+			<option value="bca">BCA</option>
+			<option value="bcom">BCom</option>
+			<option value="bsc">BSc</option>
+		</select>
+	
+		<!-- Sheet Selector -->
+		<select id="sheet-dropdown" onchange="handleSelection()">
+			<option value="" disabled selected>Select Sheet</option>
+			<option value="attendance">Attendance</option>
+			<option value="grade">Grades</option>
+			<option value="assignments">Assignments</option>
+		</select>
 	</div>
+	
+	<div id="csv-table-container"></div>
+	
 
-	<div class="container-table">
+
+	
+		
+	<!-- <div class="container-table">
 		<table class="table table-bordered">
 			<thead>
 			  <tr>
@@ -95,9 +92,11 @@
 			  </tr>
 			</tbody>
 		</table>
-	</div>
+	</div> -->
 
 </body>
-<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="./dashboard.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>

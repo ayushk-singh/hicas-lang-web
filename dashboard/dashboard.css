@@ -1,0 +1,33 @@
+.dropdown-container{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 50px;
+}
+
+.container-table{
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	padding: 20px;
+}
+
+
+.dropdown-container {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	margin-top: 20px;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+th, td {
+	padding: 8px;
+	border: 1px solid #ddd;
+	text-align: left;
+}
+th {
+	background-color: #f4f4f4;
+}
